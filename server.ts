@@ -1,6 +1,7 @@
 import express, {Express, Request, Response} from "express";
 import dotenv from "dotenv";
 import connectDB from "./database/db";
+import Book from "./models/booksModel";
 
 dotenv.config();
 connectDB();
@@ -11,8 +12,10 @@ const PORT: string|number = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-app.get('/', (req: Request, res: Response) => {
-    res.send("test")
+app.get('/', async (req: Request, res: Response) => {
+    const data = await Book.find({}).limit(5);
+    console.log(data);
+    res.json(data);
 });
 
 app.listen(PORT, () => {
