@@ -77,8 +77,21 @@ const updateBook = async (req: Request, res: Response) => {
     } catch (error) {
         res.status(500).json({ message: "Error updating book", error });
     }
-};
+}
 
-export {getAllBooks, getBookWithPartialTitle, getBookByID, createBook, updateBook};
+const deleteBook = async (req: Request, res: Response) => {
+    try {
+        const book = await Book.findByIdAndDelete(req.params.id, req.body);
+        if (!book) {
+            res.status(404).json({message: "book not found"});
+            return;            
+        }
+        res.status(200).json({ mesage: "book has been deleted", book});
+    } catch (error) {
+        res.status(500).json({ message: "Error deleting book", error});
+    }
+}
+
+export {getAllBooks, getBookWithPartialTitle, getBookByID, createBook, updateBook, deleteBook};
 
 //export {getAllBooks};
