@@ -1,5 +1,6 @@
 import express, {Express, Request, Response} from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 import connectDB from "./database/db";
 import Book from "./models/booksModel";
 import bookRouter from "./routes/bookRouter";
@@ -10,6 +11,7 @@ connectDB();
 const app: Express = express();
 const PORT: string|number = process.env.PORT || 3000;
 
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
  /*
