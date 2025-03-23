@@ -13,7 +13,7 @@ async function getAllBooks(req: Request, res: Response) {
 async function getBookWithPartialTitle(req: Request, res: Response) {
     try {
         const title = req.query.title;
-        if (!title) res.status(400).json({message: "title is required"});
+        if (!title)  res.status(400).json({message: "title is required"});
         return;
 
         const books = await Book.find({ title: { $regex: title, $options: "i"}})
@@ -65,6 +65,19 @@ const createBook = async (req: Request, res: Response) => {
     }
 }
 
-export {getAllBooks, getBookWithPartialTitle, getBookByID, createBook};
+const updateBook = async (req: Request, res: Response) => {
+    try {
+        const book = await Book.findByIdAndUpdate(req.params.id, req.body, {new: true});
+        if (!book) {
+        res.status(404).json({message: "book not found"});
+        return;
+        }
+        res.status(200).json({ message: "Book updated successfully", book });
+    } catch (error) {
+        res.status(500).json({ message: "Error updating book", error });
+    }
+};
+
+export {getAllBooks, getBookWithPartialTitle, getBookByID, createBook, updateBook};
 
 //export {getAllBooks};
