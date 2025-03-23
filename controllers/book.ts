@@ -10,6 +10,7 @@ async function getAllBooks(req: Request, res: Response) {
     }
 }
 
+// needs fixing cant write return res.status(400).json({message: "title is required"});
 async function getBookWithPartialTitle(req: Request, res: Response) {
     try {
         const title = req.query.title;
