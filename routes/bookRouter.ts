@@ -9,7 +9,7 @@ bookRouter.put('/update/:id', updateBook);
 
 bookRouter.delete('/delete/:id', deleteBook);
 
-bookRouter.get('/getAllbooks', getAllBooks);
+bookRouter.get('/', getAllBooks);
 
 bookRouter.get('/partialTitle', getBookWithPartialTitle);
 
