@@ -14,9 +14,8 @@ async function getAllBooks(req: Request, res: Response) {
 async function getBookWithPartialTitle(req: Request, res: Response) {
     try {
         const title = req.query.title;
-        if (!title)  res.status(400).json({message: "title is required"});
-        return;
-
+        if (!title)  {res.status(400).json({message: "title is required"}); return;};
+       
         const books = await Book.find({ title: { $regex: title, $options: "i"}})
         
         if (books.length === 0) {
@@ -30,14 +29,14 @@ async function getBookWithPartialTitle(req: Request, res: Response) {
     }
 }
 
-async function getBookByID(req: Request, res: Response) {
+async function getBookByID(req: Request, res: Response): Promise<void> {
     try {
         const book = await Book.findById(req.params.bookID);
 
-        if (!book) res.status(404).json({ message: "book not found"});
+        if (!book) {res.status(404).json({ message: "book not found"}); return;};
         
         res.json(book);
-        return;
+    
     } catch (error) {
         res.status(500).json({ message: "invalid ID format "});
     }
