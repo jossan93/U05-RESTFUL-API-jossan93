@@ -10,13 +10,12 @@ async function getAllBooks(req: Request, res: Response) {
     }
 }
 
-// needs fixing cant write return res.status(400).json({message: "title is required"});
 async function getBookWithPartialTitle(req: Request, res: Response) {
     try {
-        const title = req.query.title;
+        const title = req.body.title;
         if (!title)  {res.status(400).json({message: "title is required"}); return;};
        
-        const books = await Book.find({ title: { $regex: title, $options: "i"}})
+        const books = await Book.find({ Title: { $regex: title, $options: "i"}})
         
         if (books.length === 0) {
             res.status(404).json({ message: "No books found with the given title" });
@@ -44,15 +43,15 @@ async function getBookByID(req: Request, res: Response): Promise<void> {
 
 const createBook = async (req: Request, res: Response) => {
     try {
-        const {title, ISBN, Summary, Author} = req.body;
+        const {Title, ISBN, Summary, Author} = req.body;
 
-        if (!title || !ISBN || !Summary || !Author) {
+        if (!Title || !ISBN || !Summary || !Author) {
             res.status(400).json({ message: "All fields (title, ISBN, Summary, Author) are required" });
             return;
         }
 
         const newBook = new Book({
-            title,
+            Title,
             ISBN,
             Summary,
             Author
