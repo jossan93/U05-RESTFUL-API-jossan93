@@ -1,7 +1,8 @@
 import { Request, Response } from "express";
 import Book from "../models/booksModel";
 
-async function getAllBooks(req: Request, res: Response) {
+// Get all the books
+async function getAllBooks(req: Request, res: Response): Promise<void> {
     try {
         const books = await Book.find({});
         res.status(200).json(books);
@@ -10,7 +11,8 @@ async function getAllBooks(req: Request, res: Response) {
     }
 }
 
-async function getBookWithPartialTitle(req: Request, res: Response) {
+// search for book with partial title
+async function getBookWithPartialTitle(req: Request, res: Response): Promise<void> {
     try {
         const title = req.body.title;
         if (!title)  {res.status(400).json({message: "title is required"}); return;};
@@ -28,6 +30,7 @@ async function getBookWithPartialTitle(req: Request, res: Response) {
     }
 }
 
+// get a book using id
 async function getBookByID(req: Request, res: Response): Promise<void> {
     try {
         const book = await Book.findById(req.params.bookID);
@@ -41,7 +44,8 @@ async function getBookByID(req: Request, res: Response): Promise<void> {
     }
 }
 
-const createBook = async (req: Request, res: Response) => {
+// create/add a new book to database
+const createBook = async (req: Request, res: Response): Promise<void> => {
     try {
         const {Title, ISBN, Summary, Author} = req.body;
 
@@ -64,7 +68,8 @@ const createBook = async (req: Request, res: Response) => {
     }
 }
 
-const updateBook = async (req: Request, res: Response) => {
+// uppdate a exiting book by using id
+const updateBook = async (req: Request, res: Response): Promise<void> => {
     try {
         const book = await Book.findByIdAndUpdate(req.params.id, req.body, {new: true});
         if (!book) {
@@ -77,7 +82,8 @@ const updateBook = async (req: Request, res: Response) => {
     }
 }
 
-const deleteBook = async (req: Request, res: Response) => {
+//delete a book by using id
+const deleteBook = async (req: Request, res: Response): Promise<void> => {
     try {
         const book = await Book.findByIdAndDelete(req.params.id, req.body);
         if (!book) {
