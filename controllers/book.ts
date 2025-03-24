@@ -93,5 +93,3 @@ const deleteBook = async (req: Request, res: Response) => {
 }
 
 export {getAllBooks, getBookWithPartialTitle, getBookByID, createBook, updateBook, deleteBook};
-
-//export {getAllBooks};

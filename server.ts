@@ -14,13 +14,7 @@ const PORT: string|number = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
- /*
-app.get('/', async (req: Request, res: Response) => {
-    const data = await Book.find({}).limit(5);
-    console.log(data);
-    res.json(data);
-});
-*/
+
 app.get('/', (req: Request, res: Response) => {
     res.send('Welcome to the Book API!');
 });
