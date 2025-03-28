@@ -1,5 +1,5 @@
 # U05-RESTFUL-API-jossan93
-### Komma igång
+# Komma igång
 Skapa en .env-fil baserat på .env.example.
 
 Kör npm install && npm run build.
@@ -14,7 +14,7 @@ Ladda upp copy of database.json i MongoDB Compass eller kopiera och klistra in d
 
 Uppdatera dokumenten och starta servern:npm start
 
-### Endpoints
+# Endpoints
 
 ## Hämta alla böcker
 
@@ -26,7 +26,7 @@ Exempel på cURL-anrop:
 
 curl -X GET http://localhost:3000/api/books
 
-# Statuskoder:
+Statuskoder:
 
 200 OK – Returnerar en lista med böcker.
 
