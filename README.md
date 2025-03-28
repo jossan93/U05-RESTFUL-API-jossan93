@@ -32,7 +32,7 @@ Statuskoder:
 
 200 OK – Returnerar en lista med böcker.
 
-500 Internal Server Error – Något gick fel på servern.
+500 Internal Server Error – error getting books.
 
 ### Hämta en bok med en del av en titel
 
@@ -44,15 +44,17 @@ Exempel på cURL-anrop:
 
 curl -X GET http://localhost:3000/api/books/partialTitle \
      -H "Content-Type: application/json" \
-     -d '{ "Title": "The" }'
+     -d '{ "title": "The" }'
 
 Statuskoder:
 
 200 OK – Returnerar en lista av matchande böcker.
 
-400 Bad Request – Titel saknas i förfrågan.
+400 Bad Request – title is required.
 
-404 Not Found – Ingen bok hittades med den titeln.
+404 Not Found – No books found with the given title.
+
+500 Internal Server Error - error getting books.
 
 ### Hämta en bok med ID
 
@@ -68,9 +70,9 @@ Statuskoder:
 
 200 OK – Returnerar boken.
 
-404 Not Found – Ingen bok hittades med det angivna ID:t.
+404 Not Found – book not found.
 
-500 Internal Server Error – Felaktigt ID-format.
+500 Internal Server Error – invalid ID format.
 
 ### Skapa en ny bok
 
@@ -91,11 +93,11 @@ curl -X POST http://localhost:3000/api/books/createBook \
 
 Statuskoder:
 
-201 Created – Boken skapades framgångsrikt.
+201 Created – book has been added.
 
-400 Bad Request – Saknade eller ogiltiga fält.
+400 Bad Request – All fields (title, ISBN, Summary, Author) are required.
 
-500 Internal Server Error – Något gick fel på servern.
+500 Internal Server Error – Error creating book.
 
 ### Uppdatera en bok
 
@@ -114,11 +116,11 @@ curl -X PUT http://localhost:3000/api/books/update/67e13f37c3fb42e80d6f5545 \
 
 Statuskoder:
 
-200 OK – Boken uppdaterades.
+200 OK – Book updated successfully.
 
-404 Not Found – Ingen bok med det angivna ID:t hittades.
+404 Not Found – book not found.
 
-500 Internal Server Error – Något gick fel på servern.
+500 Internal Server Error – Error updating book.
 
 ### Radera en bok
 
@@ -132,11 +134,11 @@ curl -X DELETE http://localhost:3000/api/books/delete/67e13f37c3fb42e80d6f5545
 
 Statuskoder:
 
-200 OK – Boken raderades.
+200 OK – book has been deleted.
 
-404 Not Found – Ingen bok hittades med det angivna ID:t.
+404 Not Found – book not found.
 
-500 Internal Server Error – Något gick fel på servern.
+500 Internal Server Error – Error deleting book.
 
 ## Köra mot den deployade versionen
 
@@ -154,7 +156,7 @@ Statuskoder:
 
 200 OK – Returnerar en lista med böcker.
 
-500 Internal Server Error – Något gick fel på servern.
+500 Internal Server Error – error getting books.
 
 ### Hämta en bok med en del av en titel
 
@@ -166,15 +168,17 @@ Exempel på cURL-anrop:
 
 curl -X GET https://u05-restful-api-jossan93.onrender.com/api/books/partialTitle \
      -H "Content-Type: application/json" \
-     -d '{ "Title": "The" }'
+     -d '{ "title": "The" }'
 
 Statuskoder:
 
 200 OK – Returnerar en lista av matchande böcker.
 
-400 Bad Request – Titel saknas i förfrågan.
+400 Bad Request – title is required.
 
-404 Not Found – Ingen bok hittades med den titeln.
+404 Not Found – No books found with the given title".
+
+500 Internal Server Error - error getting books.
 
 ### Hämta en bok med ID
 
@@ -190,9 +194,9 @@ Statuskoder:
 
 200 OK – Returnerar boken.
 
-404 Not Found – Ingen bok hittades med det angivna ID:t.
+404 Not Found – book not found.
 
-500 Internal Server Error – Felaktigt ID-format.
+500 Internal Server Error – invalid ID format.
 
 ### Skapa en ny bok
 
@@ -213,11 +217,11 @@ curl -X POST https://u05-restful-api-jossan93.onrender.com/api/books/createBook 
 
 Statuskoder:
 
-201 Created – Boken skapades framgångsrikt.
+201 Created – book has been added.
 
-400 Bad Request – Saknade eller ogiltiga fält.
+400 Bad Request – All fields (title, ISBN, Summary, Author) are required.
 
-500 Internal Server Error – Något gick fel på servern.
+500 Internal Server Error – Error creating book.
 
 ### Uppdatera en bok
 
@@ -236,11 +240,11 @@ curl -X PUT https://u05-restful-api-jossan93.onrender.com/api/books/update/67e13
 
 Statuskoder:
 
-200 OK – Boken uppdaterades.
+200 OK – Book updated successfully.
 
-404 Not Found – Ingen bok med det angivna ID:t hittades.
+404 Not Found – book not found.
 
-500 Internal Server Error – Något gick fel på servern.
+500 Internal Server Error – Error updating book.
 
 ### Radera en bok
 
@@ -254,11 +258,11 @@ curl -X DELETE https://u05-restful-api-jossan93.onrender.com/api/books/delete/67
 
 Statuskoder:
 
-200 OK – Boken raderades.
+200 OK – book has been deleted.
 
-404 Not Found – Ingen bok hittades med det angivna ID:t.
+404 Not Found – book not found.
 
-500 Internal Server Error – Något gick fel på servern.
+500 Internal Server Error – Error deleting book.
 
 
 # Länk till den deployade sidan
