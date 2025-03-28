@@ -16,7 +16,9 @@ Uppdatera dokumenten och starta servern:npm start
 
 # Endpoints
 
-## Hämta alla böcker
+## Köra mot den lokala versionen
+
+# Hämta alla böcker
 
 GET /api/books
 
@@ -32,7 +34,7 @@ Statuskoder:
 
 500 Internal Server Error – Något gick fel på servern.
 
-## Hämta en bok med en del av en titel
+# Hämta en bok med en del av en titel
 
 GET /api/books/partialTitle
 
@@ -52,7 +54,7 @@ Statuskoder:
 
 404 Not Found – Ingen bok hittades med den titeln.
 
-## Hämta en bok med ID
+# Hämta en bok med ID
 
 GET /api/books/:bookID
 
@@ -70,7 +72,7 @@ Statuskoder:
 
 500 Internal Server Error – Felaktigt ID-format.
 
-## Skapa en ny bok
+# Skapa en ny bok
 
 POST /api/books/createBook
 
@@ -95,7 +97,7 @@ Statuskoder:
 
 500 Internal Server Error – Något gick fel på servern.
 
-## Uppdatera en bok
+# Uppdatera en bok
 
 PUT /api/books/update/:id
 
@@ -118,7 +120,7 @@ Statuskoder:
 
 500 Internal Server Error – Något gick fel på servern.
 
-## Radera en bok
+# Radera en bok
 
 DELETE /api/books/delete/:id
 
@@ -136,9 +138,9 @@ Statuskoder:
 
 500 Internal Server Error – Något gick fel på servern.
 
-### Köra mot den deployade versionen
+## Köra mot den deployade versionen
 
-## Hämta alla böcker
+# Hämta alla böcker
 
 GET /api/books
 
@@ -154,7 +156,7 @@ Statuskoder:
 
 500 Internal Server Error – Något gick fel på servern.
 
-## Hämta en bok med en del av en titel
+# Hämta en bok med en del av en titel
 
 GET /api/books/partialTitle
 
@@ -174,7 +176,7 @@ Statuskoder:
 
 404 Not Found – Ingen bok hittades med den titeln.
 
-## Hämta en bok med ID
+# Hämta en bok med ID
 
 GET /api/books/:bookID
 
@@ -192,7 +194,7 @@ Statuskoder:
 
 500 Internal Server Error – Felaktigt ID-format.
 
-## Skapa en ny bok
+# Skapa en ny bok
 
 POST /api/books/createBook
 
@@ -217,7 +219,7 @@ Statuskoder:
 
 500 Internal Server Error – Något gick fel på servern.
 
-## Uppdatera en bok
+# Uppdatera en bok
 
 PUT /api/books/update/:id
 
@@ -240,7 +242,7 @@ Statuskoder:
 
 500 Internal Server Error – Något gick fel på servern.
 
-## Radera en bok
+# Radera en bok
 
 DELETE /api/books/delete/:id
 
@@ -259,5 +261,5 @@ Statuskoder:
 500 Internal Server Error – Något gick fel på servern.
 
 
-### Länk till den deployade sidan
+# Länk till den deployade sidan
 https://u05-restful-api-jossan93.onrender.com
