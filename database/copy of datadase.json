@@ -1,0 +1,199 @@
+[{
+    "_id": {
+      "$oid": "67d9be8ca468f84b663c1dfd"
+    },
+    "Title": "The Fellowship of the ring",
+    "ISBN": "9780261102354",
+    "Summary": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit. In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.",
+    "Author": "J. R. R. Tolkien"
+  },
+  {
+    "_id": {
+      "$oid": "67d9be8ca468f84b663c1dfe"
+    },
+    "Title": "The Two Towers",
+    "ISBN": "9780395489338",
+    "Summary": "Frodo and his Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in a battle in the Mines of Moria. And Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape, the rest of the company was attacked by Orcs. Now they continue the journey alone down the great River Anduin -- alone, that is, save for the mysterious creeping figure that follows wherever they go.",
+    "Author": " J. R. R. Tolkien"
+  },
+  {
+    "_id": {
+      "$oid": "67d9be8ca468f84b663c1dff"
+    },
+    "Title": "The return of the king",
+    "ISBN": "9780395489307",
+    "Summary": "As the Shadow of Mordor grows across the land, the Companions of the Ring have become involved in separate adventures. Aragorn, revealed as the hidden heir of the ancient Kings of the West, has joined with the Riders of Rohan against the forces of Isengard, and takes part in the desperate victory of the Hornburg. Merry and Pippin, captured by Orcs, escape into Fangorn Forest and there encounter the Ents. Gandalf has miraculously returned and defeated the evil wizard, Saruman. Sam has left his master for dead after a battle with the giant spider, Shelob; but Frodo is still alive -- now in the foul hands of the Orcs. And all the while the armies of the Dark Lord are massing as the One Ring draws ever nearer to the Cracks of Doom.",
+    "Author": "J. R. R. Tolkien"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c432a468f84b663c1e00"
+    },
+    "Title": "Harry Potter and the Philosopher's Stone",
+    "ISBN": "9781408855652",
+    "Summary": "When a letter arrives for unhappy but ordinary Harry Potter, a decade-old secret is revealed to him that apparently he's the last to know. His parents were wizards, killed by a Dark Lord's curse when Harry was just a baby, and which he somehow survived. Leaving his unsympathetic aunt and uncle for Hogwarts, a wizarding school brimming with ghosts and enchantments, Harry stumbles upon a sinister mystery when he finds a three-headed dog guarding a room on the third floor. Then he hears of a missing stone with astonishing powers which could be valuable, dangerous - or both. An incredible adventure is about to begin!",
+    "Author": "J. K. Rowling"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c432a468f84b663c1e01"
+    },
+    "Title": "Handmaid's Tale",
+    "ISBN": "9781784874872",
+    "Summary": "The Republic of Gilead offers Offred only one function: to breed. If she deviates, she will, like dissenters, be hanged at the wall or sent out to die slowly of radiation sickness. But even a repressive state cannot obliterate desire - neither Offred's nor that of the two men on which her future hangs. Brilliantly conceived and executed, this powerful evocation of twenty-first century America gives full rein to Margaret Atwood's devastating irony, wit and astute perception.",
+    "Author": "Margaret Atwood"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c432a468f84b663c1e02"
+    },
+    "Title": "Pride and Prejudice",
+    "ISBN": "9780141040349",
+    "Summary": "When Elizabeth Bennet first meets eligible bachelor Fitzwilliam Darcy, she thinks him arrogant and conceited; he is indifferent to her good looks and lively mind. When she later discovers that Darcy has involved himself in the troubled relationship between his friend Bingley and her beloved sister Jane, she is determined to dislike him more than ever. In the sparkling comedy of manners that follows, Jane Austen shows the folly of judging by first impressions and superbly evokes the friendships,gossip and snobberies of provincial middle- class life.",
+    "Author": "Jane Austen"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c432a468f84b663c1e03"
+    },
+    "Title": "1984",
+    "ISBN": "9780141036144",
+    "Summary": "Winston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities. Despite the police helicopters that hover and circle overhead, Winston and Julia begin to question the Party; they are drawn towards conspiracy. Yet Big Brother will not tolerate dissent - even in the mind. For those with original thoughts they invented Room 101. . .",
+    "Author": "George Orwell"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c622a468f84b663c1e04"
+    },
+    "Title": "The Great Gatsby",
+    "ISBN": "9780743273565",
+    "Summary": "Nick Carraway tells the story of Jay Gatsby, a man whose obsessive love for Daisy Buchanan leads to tragic consequences.",
+    "Author": "F. Scott Fitzgerald"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c622a468f84b663c1e05"
+    },
+    "Title": "To Kill a Mockingbird",
+    "ISBN": "9780061120084",
+    "Summary": "Scout Finch recounts her childhood in the racially charged South, as her father, lawyer Atticus Finch, defends an innocent black man.",
+    "Author": "Harper Lee"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c622a468f84b663c1e06"
+    },
+    "Title": "The Catcher in the Rye",
+    "ISBN": "9780316769488",
+    "Summary": "Holden Caulfield, a troubled teen, narrates his experiences in New York City as he struggles with depression and his search for identity.",
+    "Author": "J.D. Salinger"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c622a468f84b663c1e07"
+    },
+    "Title": "Moby-Dick",
+    "ISBN": "9781503280786",
+    "Summary": "Captain Ahab pursues the white whale, Moby Dick, with a single-minded obsession that leads to destruction and tragedy.",
+    "Author": "Herman Melville"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c622a468f84b663c1e08"
+    },
+    "Title": "Brave New World",
+    "ISBN": "9780060850524",
+    "Summary": "A futuristic society controls every aspect of life, and Bernard Marx struggles against its rigid constraints in a world of instant gratification.",
+    "Author": "Aldous Huxley"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c622a468f84b663c1e09"
+    },
+    "Title": "Frankenstein",
+    "ISBN": "9780486282114",
+    "Summary": "Victor Frankenstein creates a monster, but when the creature turns violent, Frankenstein must face the consequences of his actions.",
+    "Author": "Mary Shelley"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c622a468f84b663c1e0a"
+    },
+    "Title": "Wuthering Heights",
+    "ISBN": "9780141439556",
+    "Summary": "The dark and passionate story of Heathcliff and Catherine, whose love and hatred lead to tragic consequences in the isolated moors.",
+    "Author": "Emily Brontë"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c622a468f84b663c1e0b"
+    },
+    "Title": "Jane Eyre",
+    "ISBN": "9780141441146",
+    "Summary": "An orphaned girl, Jane Eyre, grows up to become a governess and falls in love with her enigmatic employer, Mr. Rochester.",
+    "Author": "Charlotte Brontë"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c622a468f84b663c1e0c"
+    },
+    "Title": "The Hobbit",
+    "ISBN": "9780261102217",
+    "Summary": "Bilbo Baggins, a hobbit, embarks on an unexpected journey with a group of dwarves to reclaim treasure guarded by the dragon Smaug.",
+    "Author": "J. R. R. Tolkien"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c80da468f84b663c1e0d"
+    },
+    "Title": "A Game of Thrones",
+    "ISBN": "9780553593716",
+    "Summary": "Noble families vie for control of the Iron Throne in the Seven Kingdoms, while an ancient threat looms beyond the Wall.",
+    "Author": "George R. R. Martin"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c80da468f84b663c1e0e"
+    },
+    "Title": "The Name of the Wind",
+    "ISBN": "9780756404741",
+    "Summary": "Kvothe, a legendary figure, recounts his life story, from his childhood as an orphaned traveler to his rise as a skilled magician and hero.",
+    "Author": "Patrick Rothfuss"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c80da468f84b663c1e0f"
+    },
+    "Title": "The Lies of Locke Lamora",
+    "ISBN": "9780575079402",
+    "Summary": "Locke Lamora, a master thief in the city of Camorr, navigates a world of crime and betrayal while pulling off elaborate heists.",
+    "Author": "Scott Lynch"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c80da468f84b663c1e10"
+    },
+    "Title": "The Priory of the Orange Tree",
+    "ISBN": "9781635570298",
+    "Summary": "A high-fantasy epic where dragons, magic, and powerful women play pivotal roles in a world teetering on the brink of war.",
+    "Author": "Samantha Shannon"
+  },
+  {
+    "_id": {
+      "$oid": "67d9c80da468f84b663c1e11"
+    },
+    "Title": "Mistborn: The Final Empire",
+    "ISBN": "9780765350381",
+    "Summary": "In a world where ash falls from the sky and mist dominates the night, a group of rebels with unique powers sets out to overthrow a powerful, immortal ruler.",
+    "Author": "Brandon Sanderson"
+  },
+  {
+    "_id": {
+      "$oid": "67e13f37c3fb42e80d6f5545"
+    },
+    "Title": "test",
+    "ISBN": 12334,
+    "Summary": "testt",
+    "Author": "testst",
+    "__v": 0
+  }]
