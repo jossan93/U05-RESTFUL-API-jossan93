@@ -86,7 +86,7 @@ curl -X POST http://localhost:3000/api/books/createBook \
      -H "Content-Type: application/json" \
      -d '{
            "Title": "New Book",
-           "ISBN": "123456789",
+           "ISBN": 123456789,
            "Summary": "A great book about...",
            "Author": "John Doe"
          }'
@@ -210,7 +210,7 @@ curl -X POST https://u05-restful-api-jossan93.onrender.com/api/books/createBook 
      -H "Content-Type: application/json" \
      -d '{
            "Title": "New Book",
-           "ISBN": "123456789",
+           "ISBN": 123456789,
            "Summary": "A great book about...",
            "Author": "John Doe"
          }'
